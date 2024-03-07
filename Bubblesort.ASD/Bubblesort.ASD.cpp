@@ -33,8 +33,23 @@ void display() {            // Procedure untuk menampilkan hasil
     for (int j = 0; j < n; j++) {                           // Looping dengan j dimulai dari 0 hingga n-1
         cout << "Data Ke-" << j + 1 << ":";
         cout << a[j] << endl;                               // Output ke Layar
-
     }
+    cout << endl;                                           // Output baris kosong
+}
+
+
+void bubbleSortArray() {                // Prosedur untuk mengurutkan array dengan metode bubble sort
+    int pass = 1;                        // Step 1
+
+     for (pass; pass <= n - 1; pass + 1) {               // Lopping dengan i dimulai dari 1 hingga n-1
+         for (int j = 0; j <= n - 1 - pass; j++) {       // Looping dengan j dimulai dari 0 hingga n -1
+             if (a[j] > a[j + 1]) {                      // JIka nilai pada a[j] lebih besar dari a[j+1]
+                    int temp = a[j];                        // Simpan nilai a[j] ke variabel sementara temp
+                    a[j] = a[j + 1];                        // Assign nilai  a[j + 1] ke a[j]
+                    a[j + 1] = temp;                        // Assign nilai temp ke a[j + 1] 
+             }
+         }
+     }
 }
 
     
