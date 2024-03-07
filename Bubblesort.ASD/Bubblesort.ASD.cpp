@@ -52,5 +52,12 @@ void bubbleSortArray() {                // Prosedur untuk mengurutkan array deng
      }
 }
 
+int main() {
+    input();                // Memanggil read ()
+    bubbleSortArray();      // Memanggil BubbleSortArray ()
+    display();              // Memanggil display ()
+    return 0;
+}
+
     
 
